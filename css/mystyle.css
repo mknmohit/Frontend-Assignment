@@ -1,0 +1,260 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.header{
+   background-color: #f96332;
+   width: 100%;
+   height: 60px;
+}
+
+/*  Hamburger Menu */
+ #menuToggle{
+  display: block;
+  float: left;
+  padding: 14px 16px;
+  -webkit-user-select: none;
+  user-select: none;
+  position: relative;
+  top: 5px;
+  left: 18px;
+ }
+ 
+ #menuToggle > input{
+	display: block;
+	width: 40px;
+	height: 32px;
+	position: absolute;
+	top: 9px;
+	left: 11px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 2;
+	-webkit-touch-callout: none;
+ }
+ 
+
+ #menuToggle > span{
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background:#ffffff;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+ }
+
+ #menuToggle > .span_mid{
+  width: 26px;
+ }
+ 
+ #menuToggle > span:first-child
+ {
+   transform-origin: 0% 0%;
+ }
+ 
+ #menuToggle > span:nth-last-child(2)
+ {
+   transform-origin: 0% 100%;
+ }
+  
+  /* Transforming lines of hamburger into a crossmark. */
+ #menuToggle > input:checked ~ span
+ {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #ffffff;
+ }
+ 
+ /* hiding the middle line. */
+ #menuToggle > input:checked ~ span:nth-last-child(3)
+ {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ 
+ 
+/* Changing direction of line.  */
+ #menuToggle > input:checked ~ span:nth-last-child(2)
+ {
+   transform: rotate(-45deg) translate(0, -1px);
+ }
+ 
+
+
+ #menuToggle > input:checked ~ ul
+ {
+   transform: none;
+ }
+
+
+
+
+.navbar_left{
+  width: 17%;
+  float: left;
+}
+
+.navbar_left_label{
+  line-height: 60px;
+  color: white;
+  margin-left: 60;
+  float: right;
+}
+
+.navbar_center{
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding-left: 15%;
+  box-sizing: border-box;
+  height: 60px;
+  padding-top: 12px;
+}
+
+
+.navbar_right{
+  float: right;
+  width:20%;
+  text-align: center;
+  height: 60px;
+  box-sizing: border-box;
+  margin-right: 20px;
+}
+
+
+
+.navbar_mobile{
+  width: 100%;
+  height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #ffffff;
+  font-size: 35px;
+  box-sizing: border-box;
+  padding-top: 16px;
+}
+
+.navbar_mobile_back{
+  float: left;
+  width: 18%
+}
+.navbar_mobile_comment{
+  float: left;
+  width: 20%
+}
+.navbar_mobile_font{
+  float: left;
+  width: 20%;
+}
+.navbar_mobile_bookmark{
+  float: left;
+  width: 20%
+}
+.navbar_mobile_fullscreen{
+  float: left;
+  width: 20%
+}
+
+
+.navbar_right_font{
+  float: left;
+  width: 25%;
+  color: #ffffff;
+  font-size: 35px;
+  margin-top: 10px;
+}
+.navbar_right_search{
+  float: left;
+  width: 25%;
+  margin-top: 12px;
+}
+.navbar_right_profile{
+  float: left;
+  width: 25%;
+  margin-top: 10px;
+}
+.navbar_right_bookmark{
+  float: left;
+  width: 25%;
+  margin-top: 12px;
+}
+
+ /*    BreakPoints:
+    ===============
+    mobile:  320px,
+    tablet:  740px,
+    desktop: 980px,
+    wide:    1300px*/
+
+
+/*Desktop*/
+@media (min-width: 61.25em) {
+  .navbar_mobile{
+    display: none;
+  }
+}
+
+/* Tablet to desktop css*/
+@media (min-width: 46.25em) and (max-width: 61.24em) {
+  .navbar_mobile{
+    display: none;
+  }
+  .navbar_right_font{
+    display: none;
+  }
+  .navbar_right_search{
+    width: 32%;
+
+  }
+  .navbar_right_profile{
+    width: 32%;
+  }
+  .navbar_right_bookmark{
+    width: 32%;
+  }
+}
+
+/* Mobile to Tablet css*/
+@media (min-width: 20em) and (max-width: 46.24em) {
+  .navbar_left{
+    display: none;
+  }
+  .navbar_center{
+    display: none;
+  }
+  .navbar_right{
+    display: none;
+  }
+}
+
+/* Very small mobile, less than 320px */
+@media (max-width: 20em) {
+  #menuToggle{
+    display: block;
+  }
+  .navbar_left_label{
+    display: none;
+  }
+  .navbar_center{
+    display: none;
+  }
+  .navbar_right{
+    display: none;
+  }
+
+  .navbar_mobile{
+    display: none;
+  }
+}
