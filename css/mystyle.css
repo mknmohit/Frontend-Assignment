@@ -7,9 +7,9 @@
   clear: both;
 }
 .header{
-   background-color: #f96332;
-   width: 100%;
-   height: 60px;
+  background-color: #f96332;
+  width: 100%;
+  height: 60px;
 }
 
 /*  Hamburger Menu */
@@ -206,6 +206,7 @@
   position: relative;
   height: 400px;
   width: 100%;
+  margin-bottom: 20px;
 }
 .header_banner_div{
   position: absolute;
@@ -240,7 +241,74 @@
   background-color: #f96332;
   box-sizing: border-box;
   padding: 7px;
+  box-shadow: 2px 1px 8px #888888;
+  cursor: pointer;
 }
+
+.content_section{
+  width: 94%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+.content1_details{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: auto;
+  margin-bottom: 40px;
+}
+.content1_broadcast{
+  float: left;
+  margin-right: 30px;
+  box-sizing: border-box;
+}
+.content1_broadcast > img{
+  float: left;
+  margin-right: 5px;
+}
+.content1_broadcast > .content1_broadcast_label{
+  float: left;
+  padding-top: 4px;
+}
+.content1_time{
+  float: left;
+  box-sizing: border-box;
+}
+.content1_time > img{
+  float: left;
+  margin-right: 10px;
+
+}
+.content1_time > .content1_time_label{
+  float: left;
+  padding-top: 4px;
+}
+.content1_environment{
+  float: right;
+  padding-top: 4px;
+}
+
+.content1_text{
+  text-align: left;
+  line-height: 2;
+}
+.horizontal_line{
+  margin: 40px auto;
+  text-align: center;
+  height: 2px;
+  width: 30px;
+  background-color: #f96332;
+}
+.content_section{
+  width: 94%;
+}
+
+
 
 
 
@@ -270,10 +338,26 @@
   }
   .header_banner_icons{
     float: right;
-    width: 20%;
-
+    margin-right: 30px;
   }
-
+  .content_section{
+    width: 100%;
+  }
+  .content1_details{
+    width: 80%;
+  }
+  .content1_environment{
+    margin-right: 30px;
+  }
+  .content1_text{
+    width: 100%;
+    text-align: left;
+  }
+  .content1_text_div{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 /* Tablet to desktop css*/
@@ -298,17 +382,23 @@
     height: 600px;
   }
   .header_banner_div{
-    width: 90%;
+    width: 94%;
   }
   .header_banner_label{
     float: left;
     width: 75%;
     font-size: 35px;
+    margin-left: 3%;
   }
   .header_banner_icons{
     float: right;
     width: 20%;
+    display: flex;
+    justify-content: flex-end;
   }
+/*  .content1_environment{
+    margin-right: 40px;
+  }*/
 }
 
 /* Mobile to Tablet css*/
@@ -328,6 +418,24 @@
   }
   .header_banner_label{
     float: none;
+  }
+  .header_banner_label{
+    margin-right: 0;
+  }
+  .content1_details{
+    font-size: 12px;
+  }
+  .content1_broadcast{
+    margin-right: 20px;
+  }
+  .content1_broadcast > .content1_broadcast_label{
+    padding-top: 6px;
+  }
+  .content1_time > .content1_time_label{
+    padding-top: 6px;
+  }
+  .content1_environment{
+    padding-top: 6px;
   }
 }
 
@@ -350,6 +458,9 @@
     display: none;
   }
   .header_banner_icons{
+    display: none;
+  }
+  .content1_environment{
     display: none;
   }
 }
