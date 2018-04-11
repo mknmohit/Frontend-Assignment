@@ -1,8 +1,16 @@
 * {
    margin: 0;
    padding: 0;
+<<<<<<< HEAD
+   font-family: 'Montserrat', sans-serif;
+}
+.clear{
+  clear: both;
+}
+=======
 }
 
+>>>>>>> master
 .header{
    background-color: #f96332;
    width: 100%;
@@ -191,6 +199,59 @@
   margin-top: 12px;
 }
 
+<<<<<<< HEAD
+
+.header_banner{
+  background-image: url(http://via.placeholder.com/1920x1080);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+.header_banner_div{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+.header_banner_label{
+  font-family: lato;
+  font-size: 30px;
+  font-weight: 900;
+  color: #2C3A47;
+  text-align: left;
+  margin-right: 10px;
+}
+.header_banner_icons{
+    margin-top: 40px;
+}
+.header_banner_icons_div{
+  float: left;
+  margin-right: 10px;
+}
+.header_banner_icons_img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f96332;
+  box-sizing: border-box;
+  padding: 7px;
+}
+
+
+
+=======
+>>>>>>> master
  /*    BreakPoints:
     ===============
     mobile:  320px,
@@ -204,6 +265,26 @@
   .navbar_mobile{
     display: none;
   }
+<<<<<<< HEAD
+  .header_banner{
+    height: 600px;
+  }
+  .header_banner_div{
+    width: 80%;
+  }
+  .header_banner_label{
+    float: left;
+    width: 75%;
+    font-size: 40px;
+  }
+  .header_banner_icons{
+    float: right;
+    width: 20%;
+
+  }
+
+=======
+>>>>>>> master
 }
 
 /* Tablet to desktop css*/
@@ -224,6 +305,24 @@
   .navbar_right_bookmark{
     width: 32%;
   }
+<<<<<<< HEAD
+  .header_banner{
+    height: 600px;
+  }
+  .header_banner_div{
+    width: 90%;
+  }
+  .header_banner_label{
+    float: left;
+    width: 75%;
+    font-size: 35px;
+  }
+  .header_banner_icons{
+    float: right;
+    width: 20%;
+  }
+=======
+>>>>>>> master
 }
 
 /* Mobile to Tablet css*/
@@ -237,6 +336,16 @@
   .navbar_right{
     display: none;
   }
+<<<<<<< HEAD
+  .header_banner_icons{
+    display: none;
+    float: none;
+  }
+  .header_banner_label{
+    float: none;
+  }
+=======
+>>>>>>> master
 }
 
 /* Very small mobile, less than 320px */
@@ -257,4 +366,10 @@
   .navbar_mobile{
     display: none;
   }
+<<<<<<< HEAD
+  .header_banner_icons{
+    display: none;
+  }
+=======
+>>>>>>> master
 }
