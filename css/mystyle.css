@@ -1,16 +1,11 @@
 * {
    margin: 0;
    padding: 0;
-<<<<<<< HEAD
    font-family: 'Montserrat', sans-serif;
 }
 .clear{
   clear: both;
 }
-=======
-}
-
->>>>>>> master
 .header{
    background-color: #f96332;
    width: 100%;
@@ -199,7 +194,6 @@
   margin-top: 12px;
 }
 
-<<<<<<< HEAD
 
 .header_banner{
   background-image: url(http://via.placeholder.com/1920x1080);
@@ -250,8 +244,6 @@
 
 
 
-=======
->>>>>>> master
  /*    BreakPoints:
     ===============
     mobile:  320px,
@@ -265,7 +257,6 @@
   .navbar_mobile{
     display: none;
   }
-<<<<<<< HEAD
   .header_banner{
     height: 600px;
   }
@@ -283,8 +274,6 @@
 
   }
 
-=======
->>>>>>> master
 }
 
 /* Tablet to desktop css*/
@@ -305,7 +294,6 @@
   .navbar_right_bookmark{
     width: 32%;
   }
-<<<<<<< HEAD
   .header_banner{
     height: 600px;
   }
@@ -321,8 +309,6 @@
     float: right;
     width: 20%;
   }
-=======
->>>>>>> master
 }
 
 /* Mobile to Tablet css*/
@@ -336,7 +322,6 @@
   .navbar_right{
     display: none;
   }
-<<<<<<< HEAD
   .header_banner_icons{
     display: none;
     float: none;
@@ -344,8 +329,6 @@
   .header_banner_label{
     float: none;
   }
-=======
->>>>>>> master
 }
 
 /* Very small mobile, less than 320px */
@@ -366,10 +349,7 @@
   .navbar_mobile{
     display: none;
   }
-<<<<<<< HEAD
   .header_banner_icons{
     display: none;
   }
-=======
->>>>>>> master
 }
