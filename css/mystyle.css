@@ -247,11 +247,12 @@
 
 .content_section{
   width: 94%;
-  height: 500px;
+  overflow: auto;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   box-sizing: border-box;
+  margin-bottom: 50px;
 }
 .content1_details{
   font-size: 12px;
@@ -305,10 +306,6 @@
   width: 30px;
   background-color: #f96332;
 }
-.content_section{
-  width: 94%;
-}
-
 .content1_environment_underline{
   height: 2px;
   background-color: #bdc3c7;
@@ -392,6 +389,164 @@ font-family: Lato;
 .image_stack_text_ans2{
   margin-top: 320px;
   text-align: left;
+}
+.next_story{
+  background-color: #ecf0f1;
+  box-sizing:  border-box;
+  text-align:  center;
+  padding-top: 80px;
+  padding-bottom:  80px;
+}
+.next_story_label{
+  margin-bottom: 40px;
+  font-size: 14px;
+  color: #7f8c8d;
+  cursor: pointer;
+}
+.next_story_heading{
+  font-family: Lato;
+  font-size: 21px;
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.next_symbol{
+  font-size: 50px;
+  color: #f96332;
+  font-weight: 300;
+  cursor: pointer;
+}
+input {
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+:-webkit-autofill{
+  color: #fff !important;
+}
+.subscribe{
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #f96332;
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+.subscribe_label{
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.subscribe_text{
+  color: #ffffff;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+.email_box > input{
+  box-sizing: border-box;
+  width: 250px;
+  height: 50px;
+  border-radius: 26px;
+  border: 0px;
+  font-size: 16px;
+  background-image: url('../img/mail.png');
+  background-color: rgba(255, 255, 255,0.2);
+  background-position: 20px 13px;
+  background-repeat: no-repeat;
+  padding-left: 55px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+.subscribe_button{
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 50px;
+  border-radius: 26px;
+  background-color: #ffffff;
+  /* margin-bottom: 60px; */
+  /* border: 1px solid; */
+  cursor: pointer;
+  color: #f96332;
+  font-weight: 500;
+}
+::placeholder{
+  color: #ffffff;
+  font-weight: 500;
+}
+.footer{
+  background-color: #E3E3E3;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 80px;
+  font-size: 14px;
+}
+.footer_div{
+  width: 85%;
+  margin: 0 auto;
+  line-height: 80px;
+}
+.footer_left{
+  float: left;
+  width: 60%;
+  color: #A3A3A3;
+}
+.footer_aboutus{
+  float: left;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.footer_terms{
+  float: left;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.footer_privacy{
+  float: left;
+  cursor: pointer;
+}
+.footer_right{
+  float: right;
+  width: 39%;
+  color: #A3A3A3;
+}
+.footer_copyright{
+  float: right;
+}
+.footer_social_icons{
+  float: right;
+  width: 40%;
+  padding-right: 3%;
+  color: #A3A3A3;
+}
+.footer_fb{
+  margin-right: 20px;
+  cursor: pointer;
+}
+.footer_twitter{
+  margin-right: 20px;
+  cursor: pointer;
+}
+.footer_insta{
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.footer_fb:hover{
+  color: #3C3C3C;
+}
+.footer_twitter:hover{
+  color: #3C3C3C;
+}
+.footer_insta:hover{
+  color: #3C3C3C;
 }
 
 
@@ -494,6 +649,9 @@ font-family: Lato;
   .image_stack_text_ans1_desktop{
     display: block;
   }
+  .next_story{
+    display: none;
+  }
 }
 
 /* Tablet to desktop css*/
@@ -571,6 +729,9 @@ font-family: Lato;
   .image_stack_text_ans1_desktop{
     display: none;
   }
+  .footer{
+    display: none;
+  }
 
 }
 
@@ -616,6 +777,15 @@ font-family: Lato;
   .image_stack_text_ans1_desktop{
     display: none;
   }
+  .horizontal_line{
+    display: none;
+  }
+  .subscribe{
+    display: none;
+  }
+  .footer{
+    display: none;
+  }
 }
 
 /* Very small mobile, less than 320px */
@@ -643,6 +813,15 @@ font-family: Lato;
     display: none;
   }
   .image_stack_text_ans1_desktop{
+    display: none;
+  }
+  .horizontal_line{
+    display: none;
+  }
+  .subscribe{
+    display: none;
+  }
+  .footer{
     display: none;
   }
 }
