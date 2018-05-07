@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>Prime Digital</title>
 	<meta charset="UTF-8">
@@ -35,34 +35,34 @@
 				<div class="navbar_left_label">NEWS</div>
 			</div>
 			<div class="navbar_center">
-				<img src="img/logo.png" alt="logo" height="35px">
+				<img src="img/logo.png" alt="logo" height="24px">
 			</div>
 			<div class="navbar_right">
 				<div class="navbar_right_font">Aa</div>
 				<div class="navbar_right_search">
-					<img src="img/search.png" alt="search" height="30px">
+					<img src="img/search.png" alt="search" height="22px">
 				</div>
 				<div class="navbar_right_profile">
-					<img src="img/profile.png" alt="profile" height="36px">
+					<img src="img/profile.png" alt="profile" height="28px">
 				</div>
 				<div class="navbar_right_bookmark">
-					<img src="img/bookmark.png" alt="bookmark" height="30px">
+					<img src="img/bookmark.png" alt="bookmark" height="22px">
 				</div>
 			</div>
 			<!-- Header for Mobile -->
 			<div class="navbar_mobile">
 				<div class="navbar_mobile_back">
-					<img src="img/less_than.png" alt="Back" height="30px">	
+					<img src="img/less_than.png" alt="Back" height="20px" style="margin-bottom:8px">	
 				</div>
 				<div class="navbar_mobile_comment">
-					<img src="img/comment.png" alt="comment" height="30px">
+					<img src="img/comment.png" alt="comment" height="20px" style="margin-bottom:8px">
 				</div>
 				<div class="navbar_mobile_font">Aa</div>
 				<div class="navbar_mobile_bookmark">
-					<img src="img/bookmark.png" alt="bookmark" height="30px">
+					<img src="img/bookmark.png" alt="bookmark" height="20px" style="margin-bottom:8px">
 				</div>
 				<div class="navbar_mobile_fullscreen">
-					<img src="img/arrow.png" alt="New Tab" height="30px">
+					<img src="img/arrow.png" alt="New Tab" height="20px" style="margin-bottom:8px">
 				</div>
 			</div>
 		</div>
@@ -149,6 +149,33 @@
 			</div>
 			<div class="horizontal_line"></div>
 		</div>
+		<!-- Comment Section -->
+		<div class="comment_section">
+			<div class="comment_header">
+				<div class="comment_header_width">
+					<div class="comment_header_left_div">
+						<div class="comment_header_numb">23</div>
+						<div class="comment_header_label">&nbsp;COMMENTS</div>
+					</div>
+					<div class="comment_header_right_div">
+						<div class="comment_header_best">Best</div>
+						<div class="comment_header_newest">Newest</div>
+						<div class="comment_header_oldest">Oldest</div>
+					</div>
+				</div>
+			</div>
+			<div id="comment_container">
+				
+			</div>
+			<div class="comment_input">
+				<div class="comment_pic">
+					<img src="img/profile.png" alt="profile" height="50px">
+				</div>
+				<input id="comment_value" type="text" name="text" placeholder="Write something...">
+				<input type="submit" name="submit" id="submit" value="Submit">
+				<div id="demo"></div>
+			</div>
+		</div>
 		<!-- Subscribe -->
 		<div class="subscribe">
 			<div class="subscribe_label">
@@ -179,13 +206,13 @@
 			<div class="footer_div">
 				<div class="footer_left">
 					<div class="footer_aboutus">
-						About Us
+						<a href="#">About Us</a>
 					</div>
 					<div class="footer_terms">
-						Terms &amp; conditions
+						<a href="#">Terms &amp; conditions</a>
 					</div>
 					<div class="footer_privacy">
-						Privacy Policy
+						<a href="#">Privacy Policy</a>
 					</div>
 				</div>
 				<div class="footer_right">
@@ -202,6 +229,17 @@
 		</div>
 	</div>
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
